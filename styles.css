@@ -31,6 +31,9 @@ h1 {
   width: 100%;
   text-align: end;
   border: 2px solid gray;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #clear {
   padding: 5px;

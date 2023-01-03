@@ -105,6 +105,3 @@ const handleOperator = function (opValue) {
     return;
   }
 };
-//HAY QUE CONTROLAR QUE NO SE PUEDA PONER MAS DE UN PUNTO POR NUMERO
-//const POINT = document.querySelector("#punto");
-//let pointExists = false;
