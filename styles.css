@@ -4,17 +4,23 @@
   font-weight: bolder;
   font-size: large;
 }
+html {
+  background-color: rgb(218, 234, 250);
+}
 h1 {
   font-size: xx-large;
   margin-top: 30px;
   text-align: center;
+  color: rgb(2, 2, 34);
+  text-shadow: 3px 3px 2px rgb(255, 255, 255);
 }
 #calc-body {
   margin: auto;
   margin-top: 3vh;
-  width: 15vw;
+  width: 20vw;
   background-color: beige;
   border: 2px solid gray;
+  padding: 10px 10px 40px 10px;
 }
 #calc-display,
 #upper-buttons {
@@ -33,7 +39,7 @@ h1 {
   border: 2px solid gray;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: clip;
 }
 #clear {
   padding: 5px;
@@ -46,13 +52,19 @@ h1 {
   margin-bottom: 10px;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px;
 }
 .number,
 .operator,
 #punto {
   flex-basis: 20%;
   padding: 2%;
+  border: 1px solid;
+}
+.number:hover,
+.operator:hover,
+#punto:hover {
+  background-color: aliceblue;
 }
 @media (max-width: 600px) {
   #calc-body {
